@@ -1,7 +1,7 @@
 # Accountant
 An android application for accounting services which allow you to create invoice, purchase, and draft bills with easy technics and voice field filling service.
 
-#### Compatible down to **API Level 21** and higher
+#### Compatible with **API Level 21** and higher
 
 ### What's included 🚀
 - **the smart voice service for managing and editing fields**
