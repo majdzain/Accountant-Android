@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="360dp"
+    android:layout_height="match_parent"
+    android:background="@drawable/dialog_background"
+    android:layoutDirection="locale"
+    android:orientation="vertical"
+    android:weightSum="10">
+
+    <SearchView
+        android:id="@+id/edit_search_suppliers"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:iconifiedByDefault="false"
+        android:queryHint="@string/suppliers_search">
+
+        <requestFocus />
+    </SearchView>
+
+    <ListView
+        android:id="@+id/list_suppliers_search"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="8"/>
+
+    <Button
+        android:id="@+id/cancel_dialog_search"
+        style="@style/Widget.AppCompat.Button.Borderless"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/dialogNegative"
+        android:theme="@style/CancelButton"
+        android:layout_weight="1"/>
+</LinearLayout>

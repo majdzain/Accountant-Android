@@ -1,0 +1,220 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/dialog_add_edit"
+    android:layout_width="320dp"
+    android:layout_height="fill_parent"
+    android:background="@drawable/dialog_background"
+    android:layoutDirection="locale"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/dialogNum"
+            android:layout_width="150dp"
+            android:layout_height="40dp"
+            android:layout_centerInParent="true"
+            android:layout_centerVertical="false"
+            android:layout_gravity="center"
+            android:background="@drawable/cir_blue"
+            android:gravity="center"
+            android:text="Number"
+            android:textColor="@color/spec_black"
+            android:textSize="22sp"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:id="@+id/imgDeleteRow"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentTop="false"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="11dp"
+            android:visibility="visible"
+            android:src="@drawable/ic_action_delete" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layoutDirection="locale"
+        android:orientation="horizontal"
+        android:weightSum="10">
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/til_add_id"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="5"
+            android:theme="@style/TextLabel5"
+            android:visibility="gone">
+
+            <EditText
+                android:id="@+id/edit_add_id"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/edit_new_code"
+                android:imeOptions="actionNext"
+                android:inputType="text"
+                android:nextFocusForward="@id/edit_add_amount"
+                android:textStyle="bold" />
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/til_add_subject"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="5"
+            android:theme="@style/TextLabel5">
+
+            <com.zezoo.accountant.CustomAutoCompleteTextView
+                android:id="@+id/edit_add_subject"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/subject"
+                android:imeOptions="actionNext"
+                android:inputType="text"
+                android:nextFocusForward="@id/edit_add_amount"
+                android:textStyle="bold" />
+        </android.support.design.widget.TextInputLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layoutDirection="locale"
+        android:orientation="horizontal"
+        android:weightSum="10">
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/til_add_amount"
+            android:layout_width="60dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="5"
+            android:theme="@style/TextLabel5">
+
+            <EditText
+                android:id="@+id/edit_add_amount"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/amount"
+                android:imeOptions="actionNext"
+                android:inputType="number|numberDecimal"
+                android:nextFocusForward="@id/edit_add_offer"
+                android:textStyle="bold" />
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/til_add_offer"
+            android:layout_width="60dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="5"
+            android:theme="@style/TextLabel5">
+
+            <EditText
+                android:id="@+id/edit_add_offer"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/dialogOffer"
+                android:imeOptions="actionNext"
+                android:inputType="number|numberDecimal"
+                android:nextFocusForward="@id/edit_add_unit"
+                android:textStyle="bold" />
+        </android.support.design.widget.TextInputLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layoutDirection="locale"
+        android:orientation="horizontal"
+        android:weightSum="10">
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/til_add_unit"
+            android:layout_width="60dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="5"
+            android:theme="@style/TextLabel5">
+
+            <EditText
+                android:id="@+id/edit_add_unit"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/unitprice"
+                android:imeOptions="actionNext"
+                android:inputType="number|numberDecimal"
+                android:nextFocusForward="@id/edit_add_total"
+                android:textStyle="bold" />
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/til_add_total"
+            android:layout_width="60dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="5"
+            android:theme="@style/TextLabel5">
+
+            <EditText
+                android:id="@+id/edit_add_total"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/totalprice"
+                android:imeOptions="actionNext"
+                android:inputType="number|numberDecimal"
+                android:nextFocusForward="@id/edit_add_state"
+                android:textStyle="bold" />
+        </android.support.design.widget.TextInputLayout>
+    </LinearLayout>
+
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/til_add_state"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/TextLabel5">
+
+        <EditText
+            android:id="@+id/edit_add_state"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/dialogStatement"
+            android:imeOptions="actionDone"
+            android:inputType="text"
+            android:nextFocusForward="@id/dialog_btn_add_edit"
+            android:textStyle="bold" />
+    </android.support.design.widget.TextInputLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layoutDirection="locale"
+        android:orientation="horizontal"
+        android:weightSum="10">
+
+        <Button
+            android:id="@+id/dialog_btn_cancel"
+            style="@style/Widget.AppCompat.Button.Borderless"
+            android:layout_width="60dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="5"
+            android:text="@string/dialogNegative"
+            android:textStyle="bold"
+            android:theme="@style/CancelButton" />
+
+        <Button
+            android:id="@+id/dialog_btn_add_edit"
+            style="@style/Widget.AppCompat.Button.Borderless"
+            android:layout_width="60dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="5"
+            android:text="@string/dialogPositiveAdd"
+            android:textStyle="bold"
+            android:theme="@style/AddEditButton" />
+    </LinearLayout>
+
+</LinearLayout>

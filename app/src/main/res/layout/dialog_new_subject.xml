@@ -1,0 +1,320 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="350dp"
+    android:layout_height="fill_parent"
+    android:background="@drawable/dialog_background"
+    android:layoutDirection="locale">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="fill_parent"
+        android:layoutDirection="locale"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="1dp"
+            android:background="@color/dark_gray"
+            android:weightSum="10">
+
+            <TextView
+                android:id="@+id/txt_date"
+                android:layout_width="60dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="5"
+                android:background="@color/white"
+                android:gravity="left"
+                android:text="Date"
+                android:textColor="@color/dark_gray"
+                android:textSize="19sp" />
+
+            <TextView
+                android:id="@+id/txt_time"
+                android:layout_width="60dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="5"
+                android:background="@color/white"
+                android:gravity="right"
+                android:text="Time"
+                android:textColor="@color/dark_gray"
+                android:textSize="19sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="10">
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="5"
+                android:theme="@style/TextLabel1">
+
+                <AutoCompleteTextView
+                    android:id="@+id/edit_new_folder"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/edit_new_folder"
+                    android:inputType="textCapSentences"
+                    android:imeOptions="actionNext"
+                    android:nextFocusForward="@id/edit_new_buyer"
+                    android:singleLine="true" />
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/til_buyer"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="5"
+                android:theme="@style/TextLabel1">
+
+                <AutoCompleteTextView
+                    android:id="@+id/edit_new_buyer"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/edit_new_buyer"
+                    android:imeOptions="actionNext"
+                    android:nextFocusForward="@id/edit_new_subject"
+                    android:singleLine="true" />
+            </android.support.design.widget.TextInputLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="10">
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/til_subject"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="4"
+                android:theme="@style/TextLabel1">
+
+                <EditText
+                    android:id="@+id/edit_new_subject"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:imeOptions="actionNext"
+                    android:nextFocusForward="@id/edit_new_code"
+                    android:hint="@string/edit_new_subject"
+                    android:inputType="textCapSentences"
+                    android:singleLine="true" />
+            </android.support.design.widget.TextInputLayout>
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/til_code"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="6"
+                android:theme="@style/TextLabel1">
+
+                <EditText
+                    android:id="@+id/edit_new_code"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:imeOptions="actionNext"
+                    android:nextFocusForward="@id/edit_new_amount"
+                    android:hint="@string/edit_new_code"
+                    android:inputType="number"
+                    android:maxLength="5"
+                    android:singleLine="true" />
+            </android.support.design.widget.TextInputLayout>
+
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="10">
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/til_amount"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="3.8"
+                android:theme="@style/TextLabel1">
+
+                <EditText
+                    android:id="@+id/edit_new_amount"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:imeOptions="actionNext"
+                    android:nextFocusForward="@id/edit_new_unit"
+                    android:hint="@string/edit_new_amount"
+                    android:inputType="numberDecimal"
+                    android:singleLine="true" />
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/til_unit"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:theme="@style/TextLabel1">
+
+                <EditText
+                    android:id="@+id/edit_new_unit"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:imeOptions="actionNext"
+                    android:nextFocusForward="@id/edit_new_lock"
+                    android:hint="@string/edit_new_unit"
+                    android:inputType="numberDecimal"
+                    android:singleLine="true" />
+            </android.support.design.widget.TextInputLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="4.2"
+                android:background="@drawable/spinner_bg_subject"
+                android:orientation="horizontal">
+
+                <Spinner
+                    android:id="@+id/spin_new_currency_s"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="5dp"
+                    android:background="@android:color/transparent"
+                    android:gravity="center"
+                    android:spinnerMode="dropdown" />
+
+                <ImageView
+                    android:id="@+id/spin_img"
+                    android:layout_width="20dp"
+                    android:layout_height="33dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_gravity="center"
+                    android:src="@mipmap/drop" />
+
+            </RelativeLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content">
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="5"
+                android:theme="@style/TextLabel1">
+
+                <EditText
+                    android:id="@+id/edit_new_lock"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:imeOptions="actionNext"
+                    android:nextFocusForward="@id/edit_new_last"
+                    android:hint="@string/edit_new_lock"
+                    android:inputType="numberDecimal"
+                    android:singleLine="true" />
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="5"
+                android:theme="@style/TextLabel1">
+
+                <EditText
+                    android:id="@+id/edit_new_last"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:imeOptions="actionNext"
+                    android:nextFocusForward="@id/edit_new_a_lock"
+                    android:hint="@string/edit_new_last"
+                    android:inputType="numberDecimal"
+                    android:singleLine="true" />
+            </android.support.design.widget.TextInputLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content">
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="5"
+                android:theme="@style/TextLabel1">
+
+                <EditText
+                    android:id="@+id/edit_new_a_lock"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:imeOptions="actionNext"
+                    android:nextFocusForward="@id/edit_new_a_last"
+                    android:hint="@string/edit_new_a_lock"
+                    android:inputType="numberDecimal"
+                    android:singleLine="true" />
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="5"
+                android:theme="@style/TextLabel1">
+
+                <EditText
+                    android:id="@+id/edit_new_a_last"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:imeOptions="actionNext"
+                    android:nextFocusForward="@id/edit_new_spec"
+                    android:hint="@string/edit_new_a_last"
+                    android:inputType="numberDecimal"
+                    android:singleLine="true" />
+            </android.support.design.widget.TextInputLayout>
+        </LinearLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:theme="@style/TextLabel1">
+
+            <EditText
+                android:id="@+id/edit_new_spec"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/edit_new_spec"
+                android:inputType="textCapSentences"
+                android:singleLine="false" />
+        </android.support.design.widget.TextInputLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="10">
+
+            <Button
+                android:id="@+id/cancel_new_subject"
+                style="@style/Widget.AppCompat.Button.Borderless"
+                android:layout_width="60dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="5"
+                android:text="@string/dialogNegative"
+                android:theme="@style/CancelButton" />
+
+            <Button
+                android:id="@+id/save_new_subject"
+                style="@style/Widget.AppCompat.Button.Borderless"
+                android:layout_width="60dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="5"
+                android:text="@string/dialogPositiveSave"
+                android:theme="@style/AddNewSubject" />
+
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>

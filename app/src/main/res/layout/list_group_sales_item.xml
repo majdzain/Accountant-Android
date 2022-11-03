@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="40dp"
+    android:orientation="horizontal"
+    android:id="@+id/list_group_bills_ite">
+    <android.support.v7.widget.AppCompatCheckBox
+        android:id="@+id/groupSalCheck"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginStart="10dp"
+        android:layout_weight="1"
+        android:enabled="false"
+        android:focusable="false"
+        android:paddingBottom="19dp"
+        android:paddingTop="19dp"
+        android:visibility="gone"
+        app:buttonTint="@color/orange" />
+    <ImageView
+        android:id="@+id/groupBillsIndicator"
+        android:layout_width="42dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:layout_gravity="center"
+        app:srcCompat="@drawable/expander_group_sales" />
+
+    <TextView
+        android:id="@+id/listBillItemTitle"
+        android:layout_width="320dp"
+        android:layout_height="wrap_content"
+        android:paddingBottom="10dp"
+        android:gravity="fill_horizontal"
+        android:paddingTop="10dp"
+        android:text="Header"
+        android:layout_gravity="center"
+        android:textColor="@color/spec_black"
+        android:singleLine="true"
+        android:textSize="18sp"
+        android:textStyle="bold"/>
+</LinearLayout>

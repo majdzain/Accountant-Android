@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/list_subjects_it"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:weightSum="10">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="8.4">
+
+        <TextView
+            android:id="@+id/txt_amount"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="top|center_horizontal"
+            android:gravity="center"
+            android:text="amo"
+            android:textColor="@color/darker_blue"
+            android:textStyle="bold"
+            android:visibility="gone" />
+
+        <android.support.v7.widget.AppCompatCheckBox
+            android:id="@+id/subjectCheck"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:layout_marginStart="9dp"
+            android:enabled="false"
+            android:focusable="false"
+            android:gravity="center"
+            android:paddingBottom="16dp"
+            android:paddingTop="21dp"
+            app:buttonTint="@color/light_green" />
+
+        <ImageView
+            android:id="@+id/groupSubjectsIndicator"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:scaleType="center"
+            android:src="@mipmap/expander_ic_subjects"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/txt_unit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|center_horizontal"
+            android:gravity="center"
+            android:text="uni"
+            android:textColor="@color/orange"
+            android:textStyle="bold"
+            android:visibility="gone" />
+    </FrameLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1.6"
+        android:orientation="vertical"
+        android:paddingBottom="7dp"
+        android:paddingEnd="10dp"
+        android:paddingTop="7dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layoutDirection="locale"
+            android:orientation="horizontal"
+            android:weightSum="10">
+
+            <TextView
+                android:id="@+id/subjectName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="5"
+                android:gravity="start"
+                android:text="Name"
+                android:textColor="@color/spec_black"
+                android:singleLine="true"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/subjectAmount"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="5"
+                android:gravity="end"
+                android:text="Amount"
+                android:singleLine="true"
+                android:textColor="@color/spec_black"
+                android:textSize="15sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/linearSeeks"
+            android:layout_width="match_parent"
+            android:layout_height="16dp"
+            android:layoutDirection="locale"
+            android:orientation="horizontal"
+            android:visibility="gone"
+            android:weightSum="10">
+
+            <SeekBar
+                android:id="@+id/seekBar1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:layout_weight="5"
+                android:indeterminate="false"
+                android:paddingEnd="7dp"
+                android:paddingStart="8dp"
+                android:progressDrawable="@drawable/myprogessbar_style"
+                android:splitTrack="false"
+                android:thumb="@drawable/ic_action_money" />
+
+            <SeekBar
+                android:id="@+id/seekBar2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:layout_weight="5"
+                android:indeterminate="false"
+                android:paddingEnd="5dp"
+                android:paddingStart="8dp"
+                android:progressDrawable="@drawable/myprogessbar_style"
+                android:splitTrack="false"
+                android:thumb="@drawable/ic_action_amount" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layoutDirection="locale"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/subjectCost"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="5"
+                android:gravity="start"
+                android:text="Cost"
+                android:singleLine="true"
+                android:textColor="@color/spec_black"
+                android:textSize="15sp" />
+
+            <TextView
+                android:id="@+id/subjectLast"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="5"
+                android:gravity="end"
+                android:text="Last Price"
+                android:singleLine="true"
+                android:textColor="@color/spec_black"
+                android:textSize="15sp" />
+        </LinearLayout>
+    </LinearLayout>
+    </LinearLayout>

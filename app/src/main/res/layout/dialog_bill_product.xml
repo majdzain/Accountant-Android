@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/linear_info"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/dialog_product_background"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="10">
+
+        <ImageView
+            android:id="@+id/imageBack"
+            style="@style/Widget.AppCompat.Button.Borderless"
+            android:layout_width="42dp"
+            android:layout_height="42dp"
+            android:layout_gravity="center"
+            android:layout_marginStart="3dp"
+            android:layout_weight="1"
+            android:clickable="true"
+            android:scaleType="center"
+            android:theme="@style/SaveButton"
+            android:src="@drawable/ic_action_back" />
+
+        <SearchView
+            android:id="@+id/edit_search_subjects"
+            android:layout_width="fill_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="9"
+            android:iconifiedByDefault="false"
+            android:queryHint="@string/subjects_search">
+
+            <requestFocus />
+        </SearchView>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="10">
+
+        <android.support.v7.widget.AppCompatCheckBox
+            android:id="@+id/check_sellectAll"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical|start"
+            android:layout_marginStart="8dp"
+            android:layout_weight="5"
+            android:text="@string/all"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            app:buttonTint="@color/light_green" />
+
+        <TextView
+            android:id="@+id/enterProduct"
+            style="@style/Widget.AppCompat.Button.Borderless"
+            android:layout_width="match_parent"
+            android:layout_height="38dp"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="5"
+            android:clickable="true"
+            android:gravity="end"
+            android:text="@string/enter"
+            android:textColor="@color/orange"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:theme="@style/SaveButton" />
+    </LinearLayout>
+
+    <ExpandableListView
+        android:id="@+id/subjectsList"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="2dp"
+        android:childDivider="@color/spec_black"
+        android:divider="@color/light_green"
+        android:dividerHeight="1dp"
+        android:groupIndicator="@android:color/transparent" />
+
+    <ListView
+        android:id="@+id/list_subjects_search"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:divider="@color/light_green"
+        android:dividerHeight="1dp"
+        android:visibility="gone" />
+</LinearLayout>

@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".ListSubjectsActivity">
+    <item
+        android:id="@+id/menu_record"
+        android:icon="@drawable/ic_action_record"
+        android:title="@string/menu_record"
+        app:showAsAction="always"
+        android:visible="true"/>
+    <item
+        android:id="@+id/menu_extract"
+        android:icon="@drawable/ic_menu_extract"
+        android:title="@string/menu_extract"
+        app:showAsAction="always"
+        android:visible="false"/>
+    <item
+        android:id="@+id/menu_delete"
+        android:icon="@drawable/ic_action_delete"
+        android:title="@string/menu_delete"
+        app:showAsAction="always"
+        android:visible="false"/>
+    <item
+        android:id="@+id/menu_search"
+        android:icon="@android:drawable/ic_menu_search"
+        android:title="@string/menu_search"
+        app:showAsAction="always"
+        android:visible="true"/>
+    <item
+        android:id="@+id/menu"
+        android:icon="@drawable/ic_action_overflow"
+        android:orderInCategory="101"
+        android:title="@string/menu_list"
+        app:showAsAction="always">
+        <menu>
+            <item
+                android:id="@+id/menu_selectAll"
+                android:title="@string/menu_selectAll"
+                app:showAsAction="never"
+                android:visible="false"/>
+            <item
+                android:id="@+id/menu_deselectAll"
+                android:title="@string/menu_deselectAll"
+                app:showAsAction="never"
+                android:visible="false"/>
+            <item
+                android:id="@+id/menu_expAll"
+                android:title="@string/menu_expandAll"
+                app:showAsAction="never"
+                android:visible="true"/>
+            <item
+                android:id="@+id/menu_colAll"
+                android:title="@string/menu_collapseAll"
+                app:showAsAction="never"
+                android:visible="true"/>
+            <item
+                android:id="@+id/menu_new"
+                android:title="@string/menu_subject_add"
+                app:showAsAction="never" />
+            <item
+                android:id="@+id/menu_deleteAll"
+                android:title="@string/menu_type_deleteAll"
+                app:showAsAction="never" />
+            <item
+                android:id="@+id/menu_pref"
+                android:title="@string/menu_pref"
+                app:showAsAction="never" />
+            <item
+                android:id="@+id/menu_exit"
+                android:title="@string/menu_exit"
+                app:showAsAction="never" />
+        </menu>
+    </item>
+</menu>

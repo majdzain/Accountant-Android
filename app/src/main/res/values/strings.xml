@@ -1,0 +1,492 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Accountant</string>
+
+    <!-- Strings related to login -->
+    <string name="all">الكل</string>
+    <string name="enter">إدخال</string>
+    <string name="prompt_email">الإيميل</string>
+    <string name="prompt_password">كلمة السر</string>
+    <string name="action_sign_in">تسجيل</string>
+    <string name="action_sign_in_short">تسجيل الدخول</string>
+    <string name="action_register">تسجيل</string>
+    <string name="action_forget">هل نسيت كلمة السر؟</string>
+    <string name="error_invalid_email">هذا الإيميل غير صالح</string>
+    <string name="error_invalid_password">كلمة السر قصيرة</string>
+    <string name="error_incorrect_password">كلمة السر غير صحيحة</string>
+    <string name="error_field_required">مطلوب إملاء هذه الخانة</string>
+    <string name="error_code">الكود مسجل مسبقاً!</string>
+    <string name="error_ness">لا يمكنك الإلغاء! لأنك سجلت السعر الإفرادي, يجب عليك أعادة تشغيل البرنامج</string>
+    <string name="error_code_exept">الكود والمنتج غير متطابقين!</string>
+    <string name="error_bill_name">اسم الفاتورة مسجل مسبقاً!</string>
+    <string name="error_product">المنتج مسجل مسبقاً!</string>
+    <string name="error_product_row">المنتج مكتوب مسبقاً, يجب عليك تعديله!</string>
+    <string name="error_lower_lock">السعر أقل من سعر القفل!</string>
+    <string name="error_lower_amount">الكمية أكبر من كمية المنتج الفعلية!</string>
+    <string name="error_lower_amount_lock">هذه الكمية أقل من الكمية المقفولة!</string>
+    <string name="error_lower_net">تحذير!السعر أقل من السعر سعر التكلفة</string>
+    <string name="error_no_voice_results">لا يوجد نتائج! أعد تسجيل الصوت</string>
+    <string name="error_no_exist_point">اسم نقطة البيع الذي قلته غير موجود! أعد مرة أخرى</string>
+    <string name="permission_rationale">"Contacts permissions are needed for providing email
+        completions."
+    </string>
+    <string name="error_voice_delete_row">لحذف سطر من الفاتورة قُل : </string>
+    <string name="error_voice_delete_row_">حذف+(رقم السطر)</string>
+    <string name="error_voice_change_date">لتغيير التاريخ قُل : </string>
+    <string name="error_voice_change_date_">تغيير التاريخ + (التاريخ)</string>
+    <string name="error_voice_change_correct">لتغيير بيانات السطر قُل : </string>
+    <string name="error_voice_change_correct_">تغيير+(رقم السطر)+(المنتج الجديد)+عدد+(الكمية)+سعر+(السعر الإفرادي)</string>
+    <string name="error_voice_add_correct">لإضافة سطر جديد قُل : </string>
+    <string name="error_voice_add_correct_">(اسم المنتج) + عدد + (الكمية) + سعر + (السعر الإفرادي)</string>
+    <string name="error_voice_from_correct">أعد مرة أخرى! قل من أو المزوّد ثم (الاسم)"</string>
+    <string name="error_voice_to_correct">أعد مرة أخرى! قل إلى أو الزبون ثم (الاسم)"</string>
+    <string name="error_voice_currency_correct">أعد مرة أخرى! قّل العملة ثم (اسم العملة)</string>
+    <string name="error_voice_date_correct">أعد مرة أخرى! قُل التاريج ثم (رقم التاريخ)</string>
+    <string name="error_voice_discount_correct">أعد مرة أخرى! قُل الحسم ثم (رقم الحسم)</string>
+    <string name="error_voice_addition_correct">أعد مرة أخرى! قُل الإضافي ثم (رقم الإضافي)</string>
+    <string name="error_voice_category_correct">أعد مرة أخرى! قّل التصنيف ثم (اسم التصنيف)</string>
+    <string name="error_no_exist_product">المنتج الذي قلته ليس موجوداً! أعد مرة أخرى</string>
+    <string name="error_no_exist_row">رقم السطر الذي قلته غير موجود في الفاتورة! أعد مرة أخرى</string>
+    <string name="error_no_unit_word">يجب عليك قول سعر ثم (السعر الإفرادي)</string>
+    <string name="internet_connected">متصل بالإنترنت</string>
+    <string name="internet_not_connected">غير متصل بالإنترنت!</string>
+    <string name="error">أعد مرة أخرى</string>
+    <string name="error_no_number">أعد مرة أخرى! تسجيل الصوت لا يحتوي على رقم</string>
+    <string name="error_no_number_exist">أعد مرة أخرى! الرقم غير موجود في القائمة</string>
+
+    <string name="warning_not_exist_product">تحذير! يوجد بعض المنتجات غير موجودة ولم يتم حسابها في الفاتورة</string>
+
+    <string name="supplier">المزوّد</string>
+    <string name="customer">الزبون</string>
+    <string name="salesBill">فاتورة مبيعات</string>
+    <string name="purBill">فاتورة مشتريات</string>
+    <string name="temBill">فاتورة مؤقتة</string>
+    <string name="addProduct">إدخال منتج</string>
+    <string name="addCustomer">إضافة زبون</string>
+    <string name="addSupplier">إضافة مزوّد</string>
+    <string name="addExpense">إضافة مصروف</string>
+    <string name="addPBond">سند دفع</string>
+    <string name="addRBond">سند قبض</string>
+    <string name="customers_search">بحث الزبائن</string>
+    <string name="suppliers_search">بحث المزوّدين</string>
+    <string name="expenses_search">بحث المصاريف</string>
+    <string name="bonds_search">بحث السندات</string>
+
+    <string name="F">من</string>
+    <string name="T">إلى</string>
+
+    <string name="control_balance">الصندوق</string>
+    <string name="control_balance_last">آخر صندوق</string>
+    <string name="control_profits">الأرباح</string>
+    <string name="control_profits_last">آخر أرباح</string>
+    <string name="control_sales">مبيعات</string>
+    <string name="control_sales_last">آخر مبيعات</string>
+    <string name="control_cash">نقدي</string>
+    <string name="control_cash_last">آخر نقدي</string>
+    <string name="control_debt">ديون</string>
+    <string name="control_debt_last">آخر ديون</string>
+
+    <string name="without_folder">#غير مصنف</string>
+    <string name="menu_search">البحث</string>
+    <string name="menu_about">عنا</string>
+    <string name="menu_exit">خروج</string>
+    <string name="menu_pref">الإعدادات</string>
+    <string name="menu_list">القائمة</string>
+    <string name="menu_type">المنتجات</string>
+    <string name="menu_cust">الزبائن</string>
+    <string name="menu_bond">السندات</string>
+    <string name="menu_info">معلومات</string>
+    <string name="menu_extract">تصدير إلى فاتورة</string>
+    <string name="menu_delete">حذف</string>
+    <string name="menu_selectAll">اختيار الكل</string>
+    <string name="menu_expandAll">توسيع الكل</string>
+    <string name="menu_collapseAll">تصغير الكل</string>
+    <string name="menu_deselectAll">إلغاء اختيار الكل</string>
+    <string name="menu_subject_add">إضافة منتج</string>
+    <string name="menu_type_view">عرض المنتجات</string>
+    <string name="menu_type_add">إضافة منتج</string>
+    <string name="menu_customer_add">إضافة زبون</string>
+    <string name="menu_supplier_add">إضافة مزوّد</string>
+    <string name="menu_expense_add">إضافة مصروف</string>
+    <string name="menu_p_bond_add">إضافة سند دفع</string>
+    <string name="menu_r_bond_add">إضافة سند قبض</string>
+    <string name="menu_j_bond_add">إضافة سند يومي</string>
+    <string name="menu_bill_add">إضافة فاتورة مشتريات</string>
+    <string name="menu_record">التحكم الصوتي</string>
+    <string name="menu_draft_add">إضافة فاتورة مؤقتة</string>
+    <string name="menu_invoice_add">إضافة فاتورة مبيعات</string>
+    <string name="menu_type_deleteAll">حذف الكل</string>
+    <string name="menu_cust_view">عرض الزبائن</string>
+    <string name="menu_cust_add">إضافة زبون</string>
+    <string name="popupmenu_edit">تعديل</string>
+    <string name="popupmenu_delete">حذف</string>
+    <string name="popupmenu_info">المزيد من المعلومات</string>
+    <string name="popupmenu_addnew">إضافة فاتورة مبيعات</string>
+    <string name="popupmenu_addnew1">إضافة فاتورة مشتريات</string>
+
+    <string name="edit_new_folder">التصنيف</string>
+    <string name="edit_new_code">الكود</string>
+    <string name="edit_new_buyer">المزوّد</string>
+    <string name="edit_new_subject">اسم المنتج</string>
+    <string name="edit_new_amount">الكمية</string>
+    <string name="edit_new_unit">سعر التكلفة</string>
+    <string name="edit_new_lock">قفل السعر</string>
+    <string name="edit_new_last">السعر الأخير</string>
+    <string name="edit_new_a_lock">قفل الكمية</string>
+    <string name="edit_new_a_last">الكمية الأخيرة</string>
+    <string name="edit_new_spec">المواصفات</string>
+    <string name="edit_new_company">الشركة</string>
+    <string name="edit_new_customer">الزبون</string>
+    <string name="edit_new_num1">هاتف الشركة</string>
+    <string name="edit_new_num2">هاتف الزبون</string>
+    <string name="edit_new_email">الإيميل</string>
+    <string name="edit_new_balance">الحساب الحالي</string>
+    <string name="edit_new_journal">اسم المشتري/الدائن</string>
+    <string name="edit_new_journal_amount_p">مبلغ الدين</string>
+    <string name="edit_new_journal_amount_t">مبلغ النقدي</string>
+    <string name="edit_new_taken">اسم البائع/الدائن</string>
+    <string name="edit_new_taken_num">رقم الهاتف</string>
+    <string name="edit_new_taken_amount">المبلغ</string>
+    <string name="edit_new_payment">اسم المشتري/المدين</string>
+    <string name="edit_new_payment_num">رقم الهاتف</string>
+    <string name="edit_new_payment_amount">المبلغ</string>
+    <string name="edit_new_pt_statement">البيان</string>
+    <string name="edit_new_supplier">المزوّد</string>
+    <string name="edit_new_num2_">رقم المزوّد</string>
+    <string name="edit_new_expense">اسم المصروف</string>
+    <string name="edit_new_expense_c">المستهلك</string>
+
+    <string name="drawer_open">فتح</string>
+    <string name="drawer_close">إغلاق</string>
+    <string name="drawer_control">الرئيسية</string>
+    <string name="drawer_invoices">الفواتير</string>
+    <string name="drawer_products">المنتجات</string>
+    <string name="drawer_customers">الزبائن</string>
+    <string name="drawer_suppliers">المزوّدين</string>
+    <string name="drawer_purchases">المشتريات</string>
+    <string name="drawer_sales">المبيعات</string>
+    <string name="drawer_temporary">المؤقتة</string>
+    <string name="drawer_add_point">إضافة نقطة بيع</string>
+    <string name="drawer_edit_point">إدارة نقاط البيع</string>
+    <string name="drawer_bonds">السندات</string>
+    <string name="drawer_calculator">الآلة الحاسبة</string>
+    <string name="drawer_exchange">أسعار الصرف</string>
+    <string name="drawer_settings">الإعدادات</string>
+    <string name="drawer_expenses">المصاريف</string>
+    <string name="drawer_help">المساعدة والدعم</string>
+    <string name="drawer_contact_us">اتصل بنا</string>
+    <string name="drawer_backup">النسخ الاحتياطي</string>
+    <string name="section_basic">أساسي</string>
+    <string name="section_tools">أدوات</string>
+    <string name="section_preferences">التفضيلات</string>
+
+    <string name="subjects_search">بحث المنتجات</string>
+    <string name="bills_search">بحث الفواتير</string>
+
+    <string name="btn_new_subject">حفظ منتج جديد</string>
+    <string name="btn_new_customer">حفظ زبون جديد</string>
+
+    <string name="meta_position">meta_position</string>
+    <string name="meta_title">meta_title</string>
+    <string name="fab_temporary">فاتوؤة مؤقتة</string>
+    <string name="fab_sales">فاتورة مبيعات</string>
+    <string name="fab_purchases">فاتورة مشتريات</string>
+    <string name="fab_taken">سند قبض</string>
+    <string name="fab_payment">سند دفع</string>
+    <string name="fab_journal">سند يومي</string>
+    <string name="title_activity_main">MainActivity</string>
+
+    <string name="title_activity_splash">Accountant</string>
+    <string name="dummy_button">Dummy Button</string>
+    <string name="dummy_content">DUMMY\nCONTENT</string>
+    <string name="debt">دين</string>
+    <string name="cash">نقدي</string>
+    <string name="from">من :</string>
+    <string name="to">إلى :</string>
+    <string name="subjectname">اسم المنتج</string>
+    <string name="amount">الكمية</string>
+    <string name="add">إضافة</string>
+    <string name="subject">المنتج</string>
+    <string name="discount">الحسم</string>
+    <string name="addition">الإضافي</string>
+    <string name="offer">العرض</string>
+    <string name="unitprice">الإفرادي</string>
+    <string name="totalprice">الإجمالي</string>
+    <string name="notes">ملاحظات</string>
+    <string name="total">إجمالي</string>
+    <string name="total_">الإجمالي :</string>
+    <string name="final_">النهائي :</string>
+    <string name="save">حفظ</string>
+    <string name="saveastemporary">حفظ كمؤقتة</string>
+    <string name="type">النوع</string>
+    <string name="currency">العملة</string>
+    <string name="statement">البيان</string>
+
+    <string name="dialogAddTitle">إضافة سطر جديد</string>
+    <string name="dialogEditTitle">تعديل السطر</string>
+    <string name="dialogPositiveAdd">إضافة</string>
+    <string name="dialogPositiveEdit">تعديل</string>
+    <string name="dialogPositiveSave">حفظ</string>
+    <string name="dialogNegative">إلغاء</string>
+    <string name="dialogOffer">العرض(اختياري)</string>
+    <string name="dialogStatement">البيان(اختياري)</string>
+
+    <string name="dialog_title_sugg_1">اختر الصف الذي تريد إضافته عير الصوت الذي يحتوي رقم الاختيار : </string>
+    <string name="dialog_title_sugg_2">اختر المزوّد الذي تريد إضافته عير الصوت الذي يحتوي رقم الاختيار : </string>
+    <string name="dialog_title_sugg_3">اختر الزبون الذي تريد إضافته عير الصوت الذي يحتوي رقم الاختيار : </string>
+    <string name="dialog_title_sugg_4">اختر التصنيف الذي تريد إضافته عير الصوت الذي يحتوي رقم الاختيار : </string>
+
+    <string name="dolarCode">$</string>
+    <string name="sypCode">ل.س</string>
+    <string name="first_let_of_syp">ل</string>
+
+    <string name="alertPressBack">اضغط مرة أخرى للخروج</string>
+    <string name="alertTitle">تحذير!</string>
+    <string name="alertTitleNote">ملاحظة</string>
+    <string name="alertNewSupplierMessage">هذا المزوّد غير موجود, هل تريد إضافته كمزوّد جديد؟</string>
+    <string name="alertNewCustomerMessage">هذا الزبون غير موجود, هل تريد إضافته كزبون جديد؟</string>
+    <string name="alertNewProductMessage">هذا المنتج غير موجود, هل تريد إضافته كمنتج جديد؟</string>
+    <string name="alertChangedCategory">تصنيف بعض المنتجات مختلف عن التصنيف الذي أدخلته, هل تريد تعديل تصنيفهم للتصنيف المكتوب؟</string>
+    <string name="alertCalcNewValue">سعر التكلفة الذي أدخلته مختلف عن سعر التكلفة المحفوظ للمنتج, هل تريد حساب السعر وسطياً وحفظه؟</string>
+    <string name="alertContinueLaterMessage">هل تريد إكمال الفاتورة لاحقاً؟</string>
+    <string name="alertDontSaveMessage">هل أنت متأكد من عدم حفظ التغييرات؟</string>
+    <string name="alertDeleteMessage">هل أنت متأكد من حذف هذا التصنيف؟</string>
+    <string name="alertDeleteAllMessage">هل أنت متأكد من حذف جميع التصنيفات؟</string>
+    <string name="alertDeleteRowMessage">هل أنت متأكد من أنك تريد حذف هذا السطر؟</string>
+    <string name="alertPositiveButton">نعم</string>
+    <string name="alertNegativeButton">لا</string>
+    <string name="alertCancelButton">إلغاء</string>
+    <string name="alertSaveAsTemButton">حفظ كمؤقتة</string>
+    <string name="alertSaveAsNewPrice">حفظ كسعر جديد</string>
+    <string name="alertStayCategory">الإبقاء على التصنيفات</string>
+    <string name="alertIgnoreButton">تجاهل</string>
+
+    <string name="invoice_name_edit">اسم الفاتورة</string>
+    <string name="bill_name_edit">اسم الفاتورة</string>
+    <string name="draft_name_edit">اسم المؤقتة</string>
+    <string name="alertNameRepeat">عدم عرض هذا مجدداً واختيار البيانات تلقائياً</string>
+    <string name="dialog_save">حفظ</string>
+    <string name="dialog_no">إلغاء</string>
+    <string name="dialog_hint_code">الكود</string>
+    <string name="dialog_hint_name">الاسم</string>
+
+    <string name="txt_date">التاريخ والوقت :</string>
+    <string name="txt_type">نوع الفاتورة :</string>
+    <string name="txt_name">اسم الفاتورة :</string>
+    <string name="txt_code">كود الفاتورة :</string>
+    <string name="txt_from">المزوّد :</string>
+    <string name="txt_from_">نقطة البيع :</string>
+    <string name="txt_to">الزبون :</string>
+    <string name="txt_to_">نقطة البيع :</string>
+    <string name="txt_from__">من :</string>
+    <string name="txt_to__">إلى :</string>
+    <string name="txt_cash">النوع :</string>
+    <string name="txt_currency">العملة :</string>
+    <string name="txt_total">الإجمالي :</string>
+    <string name="txt_final">النهائي :</string>
+
+    <string name="bill">مشتريات</string>
+    <string name="invoice">مبيعات</string>
+    <string name="draft">مؤقتة</string>
+    <string name="extract_items_to">إدخال المنتجات في فاتورة : </string>
+
+    <string-array name="dola_sy">
+        <item>ل.س</item>
+        <item>$</item>
+    </string-array>
+    <string-array name="debt_cash">
+        <item>نقدي</item>
+        <item>دين</item>
+    </string-array>
+    <string-array name="dolar_syp">
+        <item>ل.س</item>
+        <item>دولار</item>
+    </string-array>
+    <string-array name="pur_sal_tem">
+        <item>مشتريات</item>
+        <item>مبيعات</item>
+        <item>مؤقتة</item>
+    </string-array>
+    <string-array name="pointsOfSale">
+        <item>مجد</item>
+        <item>رامي</item>
+        <item>خالد</item>
+    </string-array>
+    <string-array name="bond_type">
+        <item>سندات الدفع</item>
+        <item>سندات القبض</item>
+        <item>سندات اليومية</item>
+    </string-array>
+    <string-array name="FIRST_BILL_WORDS">
+        <item>من</item>
+        <item>مزود</item>
+        <item>الى</item>
+        <item>زبون</item>
+        <item>اضافه</item>
+        <item>ضافه</item>
+        <item>سطر</item>
+        <item>تغيير</item>
+        <item>كمية</item>
+        <item>هدد</item>
+        <item>عدد</item>
+        <item>رجوع</item>
+        <item>رجوع</item>
+        <item>خروج</item>
+        <item>تاريخ</item>
+        <item>حذف</item>
+        <item>حفظ</item>
+        <item>حفظ</item>
+        <item>ك</item>
+        <item>مؤقتة</item>
+        <item>نقدي</item>
+        <item>دين</item>
+        <item>عمله</item>
+        <item>ليره سوري</item>
+        <item>دولار</item>
+        <item>$</item>
+        <item>حسم</item>
+        <item>اضافي</item>
+        <item>ايقاف</item>
+        <item>صوت</item>
+        <item>اسم</item>
+        <item>منتج</item>
+        <item>سعر</item>
+        <item>افرادي</item>
+        <item>عرض</item>
+        <item>بيان</item>
+        <item>تصنيف</item>
+        <item></item>
+        <item></item>
+        <item></item>
+        <item></item>
+        <item> واحد </item>
+        <item> اول </item>
+        <item> اثنان </item>
+        <item> ثاني </item>
+        <item> ثلاثه </item>
+        <item> ثالث </item>
+        <item> اربعه </item>
+        <item> رابع </item>
+        <item> خمسه </item>
+        <item> خامس </item>
+        <item> سته </item>
+        <item> سادس </item>
+        <item> سبعه </item>
+        <item> سابع </item>
+        <item> ثمانيه </item>
+        <item> ثامن </item>
+        <item> ثمان </item>
+        <item> تسعه </item>
+        <item> تاسع </item>
+        <item> عشره </item>
+        <item> عاشر </item>
+    </string-array>
+    <string-array name="FIRST_BASIC_WORDS">
+        <item>إضافه</item>
+        <item>تعديل</item>
+        <item>حذف</item>
+        <item>نشاء</item>
+        <item>خروج</item>
+        <item>إدخال</item>
+        <item>ادخال</item>
+        <item>إلغاء</item>
+        <item>رجوع</item>
+        <item>رجوع</item>
+        <item>نعم</item>
+        <item>لا</item>
+        <item>إعدادات</item>
+        <item>اعدادات</item>
+        <item>فتح</item>
+        <item>نسخ احتياطي</item>
+        <item>حاسبه</item>
+        <item>مبيعات</item>
+        <item>مبيعات</item>
+        <item>مشتريات</item>
+        <item>مشتريات</item>
+        <item>مؤقتة</item>
+        <item>مؤقتة</item>
+        <item>زبائن</item>
+        <item>زبائن</item>
+        <item>مزودين</item>
+        <item>مزودين</item>
+        <item>مصاريف</item>
+        <item>مصاريف</item>
+        <item>منتجات</item>
+        <item>منتجات</item>
+        <item>سندات</item>
+        <item>سندات</item>
+        <item>دفع</item>
+        <item>مدفوعات</item>
+        <item>قبض</item>
+        <item>مقبوضات</item>
+        <item>يومي</item>
+        <item>يوميات</item>
+        <item>صرافه</item>
+        <item>صرافه</item>
+        <item>صرافه</item>
+        <item>مساعده</item>
+        <item>مساعده</item>
+        <item>دعم</item>
+        <item>عن</item>
+        <item>اتصل بنا</item>
+        <item>نحن</item>
+        <item>رئيسيه</item>
+        <item>تحكم</item>
+        <item>رئيسيه</item>
+        <item>تحكم</item>
+        <item>حساب</item>
+        <item>حسابات</item>
+        <item>حساب</item>
+        <item>حسابات</item>
+        <item>نقطه بيع</item>
+        <item>نقاط بيع</item>
+        <item>اضافه</item>
+    </string-array>
+    <string-array name="SECOND_BASIC_WORDS">
+        <item>اعدادات</item>
+        <item>إعدادات</item>
+        <item>نسخ احتياطي</item>
+        <item>حاسبه</item>
+        <item>مبيعات</item>
+        <item>مبيعات</item>
+        <item>مشتريات</item>
+        <item>مشتريات</item>
+        <item>مؤقته</item>
+        <item>مؤقته</item>
+        <item>زبون</item>
+        <item>زبائن</item>
+        <item>مزود</item>
+        <item>مزودين</item>
+        <item>مصروف</item>
+        <item>مصاريف</item>
+        <item>منتج</item>
+        <item>منتجات</item>
+        <item>سند</item>
+        <item>سندات</item>
+        <item>دفع</item>
+        <item>مدفوعات</item>
+        <item>قبض</item>
+        <item>مقبوضات</item>
+        <item>يومي</item>
+        <item>يوميات</item>
+        <item>صرافه</item>
+        <item>صرافه</item>
+        <item>صرافه</item>
+        <item>مساعده</item>
+        <item>مساعده</item>
+        <item>دعم</item>
+        <item>عن</item>
+        <item>اتصل بنا</item>
+        <item>نحن</item>
+        <item>رئيسيه</item>
+        <item>تحكم</item>
+        <item>رئيسيه</item>
+        <item>تحكم</item>
+        <item>حساب</item>
+        <item>حسابات</item>
+        <item>حساب</item>
+        <item>حسابات</item>
+        <item>نقطه بيع</item>
+        <item>نقاط بيع</item>
+    </string-array>
+</resources>

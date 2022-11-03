@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="40dp"
+    android:orientation="horizontal"
+    android:background="@color/white"
+    android:id="@+id/list_group_p_bonds_ite">
+
+    <ImageView
+        android:id="@+id/groupBondsIndicator"
+        android:layout_width="42dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_weight="1"
+        app:srcCompat="@drawable/expander_group_p_bonds" />
+
+    <TextView
+        android:id="@+id/listBondItemTitle"
+        android:layout_width="320dp"
+        android:layout_height="wrap_content"
+        android:paddingBottom="10dp"
+        android:paddingTop="10dp"
+        android:text="Header"
+        android:singleLine="true"
+        android:textColor="@color/spec_black"
+        android:textSize="18sp" />
+</LinearLayout>

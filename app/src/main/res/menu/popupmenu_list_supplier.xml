@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@+id/pop_sup_add_item"
+        android:title="@string/popupmenu_addnew1" />
+    <item android:id="@+id/pop_sup_edit_item"
+        android:title="@string/popupmenu_edit" />
+    <item android:id="@+id/pop_sup_delete_item"
+        android:title="@string/popupmenu_delete" />
+</menu>

@@ -1,0 +1,491 @@
+<resources>
+    <string name="app_name">Accountant</string>
+
+    <!-- Strings related to login -->
+    <string name="all">All</string>
+    <string name="enter">Enter</string>
+    <string name="prompt_email">Email</string>
+    <string name="prompt_password">Password</string>
+    <string name="action_sign_in">Sign in or register</string>
+    <string name="action_sign_in_short">Sign in</string>
+    <string name="action_register">Register</string>
+    <string name="action_forget">Forget Password?</string>
+    <string name="error_invalid_email">This email address is invalid</string>
+    <string name="error_invalid_password">This password is too short</string>
+    <string name="error_incorrect_password">This password is incorrect</string>
+    <string name="error_field_required">This field is required</string>
+    <string name="error_code">This code is registered before!</string>
+    <string name="error_ness">You can not close! because you registered unit price, You Should Restart The App To Close</string>
+    <string name="error_code_exept">This code and product not exepted!</string>
+    <string name="error_bill_name">This bill name is registered before!</string>
+    <string name="error_product">This product is registered before!</string>
+    <string name="error_product_row">This product is writtin before, you should edit it!</string>
+    <string name="error_lower_lock">This unit price is lower than lock price!</string>
+    <string name="error_lower_amount">This amount is bigger than product amount!</string>
+    <string name="error_lower_amount_lock">This amount is lower than product lock amount!</string>
+    <string name="error_lower_net">Warning!This unit price is lower than net price</string>
+    <string name="error_no_voice_results">No Voice Results! Please Re again</string>
+    <string name="error_no_exist_point">Your Point Name That You Saied Is Not Exist! Reagain</string>
+    <string name="permission_rationale">"Contacts permissions are needed for providing email
+        completions."
+    </string>
+    <string name="error_voice_delete_row">To Delete Row Data In Bill You Should Say : </string>
+    <string name="error_voice_delete_row_">delete + "row_number"</string>
+    <string name="error_voice_change_date">To Change Date You Should Say : </string>
+    <string name="error_voice_change_date_">change date + "the_date"</string>
+    <string name="error_voice_change_correct">To Change Row Data You Should Say : </string>
+    <string name="error_voice_change_correct_">change + "row_number" + "the_product" + amount + "number" + unit + "price"</string>
+    <string name="error_voice_add_correct">To Add Row You Should Say : </string>
+    <string name="error_voice_add_correct_">add + "the_product" + amount + "number" + unit + "price"</string>
+    <string name="error_voice_from_correct">Re again! Say from Or supplier And Then "the_name"</string>
+    <string name="error_voice_to_correct">Re again! Say to Or customer And Then "the_name"</string>
+    <string name="error_voice_currency_correct">Re again! Say currency + "the_currency"</string>
+    <string name="error_voice_date_correct">Re again! Say date + "the_date"</string>
+    <string name="error_voice_discount_correct">Re again! Say discount + "the_discount"</string>
+    <string name="error_voice_addition_correct">Re again! Say addition + "the_addition"</string>
+    <string name="error_voice_category_correct">Re again! Say date + "the_category"</string>
+    <string name="error_no_exist_product">Your Product Name That You Saied Is Not Exist! Re again</string>
+    <string name="error_no_exist_row">Row Number That You Said Do Not Exist In Invoice! Re again</string>
+    <string name="error_no_unit_word">You Should Say "Unit" + PRICE</string>
+    <string name="internet_connected">Online</string>
+    <string name="internet_not_connected">Offline!</string>
+    <string name="error">Error! Re Again</string>
+    <string name="error_no_number">Re again! The Voice Recording did not contain a number</string>
+    <string name="error_no_number_exist">Re again! The number did not exist in list</string>
+
+    <string name="warning_not_exist_product">Warning! There Are Some Products Not Existed And Will Not Calculated In Invoice</string>
+
+    <string name="supplier">Supplier</string>
+    <string name="customer">Customer</string>
+    <string name="salesBill">Create Invoice</string>
+    <string name="purBill">Create Bill</string>
+    <string name="temBill">Create Draft</string>
+    <string name="addProduct">Enter Product</string>
+    <string name="addCustomer">Add Customer</string>
+    <string name="addSupplier">Add Supplier</string>
+    <string name="addExpense">Add Expense</string>
+    <string name="addPBond">Add P Bond</string>
+    <string name="addRBond">Add R Bond</string>
+    <string name="customers_search">Customers Search</string>
+    <string name="suppliers_search">Suppliers Search</string>
+    <string name="expenses_search">Expenses Search</string>
+    <string name="bonds_search">Bonds Search</string>
+
+    <string name="F">F</string>
+    <string name="T">T</string>
+
+    <string name="control_balance">BALANCE</string>
+    <string name="control_balance_last">Last Balance</string>
+    <string name="control_profits">PROFITS</string>
+    <string name="control_profits_last">Last Profits</string>
+    <string name="control_sales">SALES</string>
+    <string name="control_sales_last">Last Sales</string>
+    <string name="control_cash">CASH</string>
+    <string name="control_cash_last">Last Cash</string>
+    <string name="control_debt">DEBT</string>
+    <string name="control_debt_last">Last Debt</string>
+
+    <string name="without_folder">#UnCategorized</string>
+    <string name="menu_search">Search</string>
+    <string name="menu_about">About</string>
+    <string name="menu_exit">Exit</string>
+    <string name="menu_pref">Settings</string>
+    <string name="menu_list">Menu</string>
+    <string name="menu_type">Products</string>
+    <string name="menu_cust">Customers</string>
+    <string name="menu_bond">Bonds</string>
+    <string name="menu_info">Info</string>
+    <string name="menu_extract">Export To Bill</string>
+    <string name="menu_delete">Delete</string>
+    <string name="menu_selectAll">Select All</string>
+    <string name="menu_deselectAll">Deselect All</string>
+    <string name="menu_expandAll">Expand All</string>
+    <string name="menu_collapseAll">Collapse All</string>
+    <string name="menu_subject_add">Add Product</string>
+    <string name="menu_type_view">View Products</string>
+    <string name="menu_type_add">Add Product</string>
+    <string name="menu_customer_add">Add Customer</string>
+    <string name="menu_supplier_add">Add Supplier</string>
+    <string name="menu_expense_add">Add Expense</string>
+    <string name="menu_p_bond_add">Add Payment Bond</string>
+    <string name="menu_r_bond_add">Add Receipt Bond</string>
+    <string name="menu_j_bond_add">Add Journal Bond</string>
+    <string name="menu_bill_add">Add Bill</string>
+    <string name="menu_record">Voice Controling</string>
+    <string name="menu_draft_add">Add Draft</string>
+    <string name="menu_invoice_add">Add Invoice</string>
+    <string name="menu_type_deleteAll">Delete All</string>
+    <string name="menu_cust_view">View Customers</string>
+    <string name="menu_cust_add">Add Customer</string>
+    <string name="popupmenu_edit">Edit</string>
+    <string name="popupmenu_delete">Delete</string>
+    <string name="popupmenu_info">More Information</string>
+    <string name="popupmenu_addnew">Add New Invoice</string>
+    <string name="popupmenu_addnew1">Add New Bill</string>
+
+    <string name="edit_new_folder">Category</string>
+    <string name="edit_new_code">Code</string>
+    <string name="edit_new_buyer">Supplier</string>
+    <string name="edit_new_subject">Product Name</string>
+    <string name="edit_new_amount">Amount</string>
+    <string name="edit_new_unit">Net Price</string>
+    <string name="edit_new_lock">Lock Price</string>
+    <string name="edit_new_last">Last Price</string>
+    <string name="edit_new_a_lock">Lock Amount</string>
+    <string name="edit_new_a_last">Last Amount</string>
+    <string name="edit_new_spec">Specifications</string>
+    <string name="edit_new_company">Company</string>
+    <string name="edit_new_customer">Customer</string>
+    <string name="edit_new_num1">Company Phone</string>
+    <string name="edit_new_num2">Customer Phone</string>
+    <string name="edit_new_email">Email</string>
+    <string name="edit_new_balance">Current Account</string>
+    <string name="edit_new_journal">Buyer/Creditor Name</string>
+    <string name="edit_new_journal_amount_p">Debt Amount</string>
+    <string name="edit_new_journal_amount_t">Cash Amount</string>
+    <string name="edit_new_taken">Creditor/Vendor Name</string>
+    <string name="edit_new_taken_num">Phone Number</string>
+    <string name="edit_new_taken_amount">Amount</string>
+    <string name="edit_new_payment">Debtor/Buyer Name</string>
+    <string name="edit_new_payment_num">Phone Number</string>
+    <string name="edit_new_payment_amount">Amount</string>
+    <string name="edit_new_pt_statement">Statement</string>
+    <string name="edit_new_supplier">Supplier</string>
+    <string name="edit_new_num2_">Supplier Number</string>
+    <string name="edit_new_expense">Expense</string>
+    <string name="edit_new_expense_c">Consumer</string>
+
+    <string name="drawer_open">Open</string>
+    <string name="drawer_close">Close</string>
+    <string name="drawer_control">Dashboard</string>
+    <string name="drawer_invoices">Invoices</string>
+    <string name="drawer_products">Products</string>
+    <string name="drawer_customers">Customers</string>
+    <string name="drawer_suppliers">Suppliers</string>
+    <string name="drawer_purchases">Purchases</string>
+    <string name="drawer_sales">Sales</string>
+    <string name="drawer_temporary">Temporary</string>
+    <string name="drawer_add_point">Add Point Of Sale</string>
+    <string name="drawer_edit_point">Manage The Points</string>
+    <string name="drawer_bonds">Bonds</string>
+    <string name="drawer_calculator">Calculator</string>
+    <string name="drawer_exchange">Exchange Rates</string>
+    <string name="drawer_settings">Settings</string>
+    <string name="drawer_expenses">Expenses</string>
+    <string name="drawer_help">Help &amp; Feedback</string>
+    <string name="drawer_contact_us">Contact Us</string>
+    <string name="drawer_backup">Backup</string>
+    <string name="section_basic">Basic</string>
+    <string name="section_tools">Tools</string>
+    <string name="section_preferences">Preferences</string>
+
+    <string name="subjects_search">Products Search</string>
+    <string name="bills_search">Invoices Search</string>
+
+    <string name="btn_new_subject">Save New Product</string>
+    <string name="btn_new_customer">Save New Customer</string>
+
+    <string name="meta_position">meta_position</string>
+    <string name="meta_title">meta_title</string>
+    <string name="fab_temporary">Temporary</string>
+    <string name="fab_sales">Sales</string>
+    <string name="fab_purchases">Purchases</string>
+    <string name="fab_taken">Receipt Bond</string>
+    <string name="fab_payment">Payment Bond</string>
+    <string name="fab_journal">Journal Bond</string>
+    <string name="title_activity_main">MainActivity</string>
+
+    <string name="title_activity_splash">Accountant</string>
+    <string name="dummy_button">Dummy Button</string>
+    <string name="dummy_content">DUMMY\nCONTENT</string>
+    <string name="debt">Debt</string>
+    <string name="cash">Cash</string>
+    <string name="from">From :</string>
+    <string name="to">To :</string>
+    <string name="subjectname">Product Name</string>
+    <string name="amount">Amount</string>
+    <string name="add">ADD</string>
+    <string name="subject">Product</string>
+    <string name="discount">Discount</string>
+    <string name="addition">Addition</string>
+    <string name="offer">Offer</string>
+    <string name="unitprice">Unit Price</string>
+    <string name="totalprice">Total Price</string>
+    <string name="notes">Notes</string>
+    <string name="total">Total</string>
+    <string name="total_">TOTAL:</string>
+    <string name="final_">FINAL:</string>
+    <string name="save">Save</string>
+    <string name="saveastemporary">Save As Temporary</string>
+    <string name="type">Type</string>
+    <string name="currency">Currency</string>
+    <string name="statement">Statement</string>
+
+    <string name="dialogAddTitle">Add A New Row</string>
+    <string name="dialogEditTitle">Edit The Row</string>
+    <string name="dialogPositiveAdd">Add</string>
+    <string name="dialogPositiveEdit">Edit</string>
+    <string name="dialogPositiveSave">Save</string>
+    <string name="dialogNegative">Cancel</string>
+    <string name="dialogOffer">Offer(Optional)</string>
+    <string name="dialogStatement">Statement(Optional)</string>
+
+    <string name="dolarCode">$</string>
+    <string name="sypCode">SYP</string>
+    <string name="first_let_of_syp">S</string>
+
+    <string name="alertPressBack">Please click BACK again to exit</string>
+    <string name="alertTitle">Alert!</string>
+    <string name="alertTitleNote">Note</string>
+    <string name="alertNewSupplierMessage">This Supplier is not exist, do you want to add it as a New Supplier?</string>
+    <string name="alertNewCustomerMessage">This Customer is not exist, do you want to add it as a New Customer?</string>
+    <string name="alertNewProductMessage">This Product is not exist, do you want to add it as a New Product?</string>
+    <string name="alertChangedCategory">The Category of some products is different from the category you enter, Do you want to edit thier Category to Category you write?</string>
+    <string name="alertCalcNewValue">This Unit Price is different from The Basic Cost Price, Do you want to calculate the new price Moderately?</string>
+    <string name="alertContinueLaterMessage">Do you want to continue your invoice later?</string>
+    <string name="alertDontSaveMessage">Do you sure you do not want save the changes?</string>
+    <string name="alertDeleteMessage">Do you sure you want to delete THIS FOLDER?</string>
+    <string name="alertDeleteAllMessage">Do you sure you want to delete ALL FOLDERS?</string>
+    <string name="alertDeleteRowMessage">Do you sure you want to delete this Row?</string>
+    <string name="alertPositiveButton">Yes</string>
+    <string name="alertNegativeButton">No</string>
+    <string name="alertCancelButton">Cancel</string>
+    <string name="alertSaveAsTemButton">Save As Temporary</string>
+    <string name="alertSaveAsNewPrice">Save As New Price</string>
+    <string name="alertStayCategory">Keep Categories</string>
+    <string name="alertIgnoreButton">Ignore</string>
+
+    <string name="invoice_name_edit">Invoice Name</string>
+    <string name="bill_name_edit">Bill Name</string>
+    <string name="draft_name_edit">Draft Name</string>
+    <string name="alertNameRepeat">Do not display this again And choose automatically the data</string>
+    <string name="dialog_save">Save</string>
+    <string name="dialog_no">Close</string>
+    <string name="dialog_hint_code">Code</string>
+    <string name="dialog_hint_name">Name</string>
+
+    <string name="dialog_title_sugg_1">Choose The Row You Want To Add By The Voice Which Contains The Number Of Selection : </string>
+    <string name="dialog_title_sugg_2">Choose The Supplier You Want To Add By The Voice Which Contains The Number Of Selection : </string>
+    <string name="dialog_title_sugg_3">Choose The Customer You Want To Add By The Voice Which Contains The Number Of Selection : </string>
+    <string name="dialog_title_sugg_4">Choose The Category You Want To Add By The Voice Which Contains The Number Of Selection : </string>
+
+    <string name="txt_date">Date And Time :</string>
+    <string name="txt_type">Basic Type :</string>
+    <string name="txt_name">Bill Name :</string>
+    <string name="txt_code">Bill Code :</string>
+    <string name="txt_from">Supplier :</string>
+    <string name="txt_from_">Point Of Sale :</string>
+    <string name="txt_to">Customer :</string>
+    <string name="txt_to_">Point Of Sale :</string>
+    <string name="txt_from__">From :</string>
+    <string name="txt_to__">To :</string>
+    <string name="txt_cash">Type :</string>
+    <string name="txt_currency">Currency</string>
+    <string name="txt_total">Total :</string>
+    <string name="txt_final">Final :</string>
+
+    <string name="bill">Bill</string>
+    <string name="invoice">Invoice</string>
+    <string name="draft">Draft</string>
+    <string name="extract_items_to">Extract Items To : </string>
+
+    <string-array name="dola_sy">
+        <item>SYP</item>
+        <item>$</item>
+    </string-array>
+    <string-array name="debt_cash">
+        <item>Cash</item>
+        <item>Debt</item>
+    </string-array>
+    <string-array name="dolar_syp">
+        <item>SYP</item>
+        <item>Dolar</item>
+    </string-array>
+    <string-array name="pur_sal_tem">
+        <item>Purchases</item>
+        <item>Sales</item>
+        <item>Temporary</item>
+    </string-array>
+    <string-array name="pointsOfSale">
+        <item>Majd</item>
+        <item>Rami</item>
+        <item>Khaled</item>
+    </string-array>
+    <string-array name="bond_type">
+        <item>Payment Bonds</item>
+        <item>Receipt Bonds</item>
+        <item>Journal Bonds</item>
+    </string-array>
+    <string-array name="FIRST_BILL_WORDS">
+        <item>from</item>
+        <item>supplier</item>
+        <item>to</item>
+        <item>customer</item>
+        <item>add</item>
+        <item>and</item>
+        <item>row</item>
+        <item>change</item>
+        <item>amount</item>
+        <item>number</item>
+        <item>num</item>
+        <item>back</item>
+        <item>close</item>
+        <item>exit</item>
+        <item>date</item>
+        <item>delete</item>
+        <item>save</item>
+        <item>safe</item>
+        <item>as</item>
+        <item>temporary</item>
+        <item>cash</item>
+        <item>debt</item>
+        <item>currency</item>
+        <item>syp</item>
+        <item>dolar</item>
+        <item>$</item>
+        <item>discount</item>
+        <item>addition</item>
+        <item>stop</item>
+        <item>voice</item>
+        <item>name</item>
+        <item>product</item>
+        <item>unit</item>
+        <item>net</item>
+        <item>offer</item>
+        <item>state</item>
+        <item>category</item>
+        <item></item>
+        <item></item>
+        <item></item>
+        <item></item>
+        <item> one </item>
+        <item> on </item>
+        <item> two </item>
+        <item> to </item>
+        <item> three </item>
+        <item> free </item>
+        <item> four </item>
+        <item> for </item>
+        <item> five </item>
+        <item> five </item>
+        <item> six </item>
+        <item> sex </item>
+        <item> seven </item>
+        <item> seven </item>
+        <item> eight </item>
+        <item> aight</item>
+        <item> eat </item>
+        <item> nine </item>
+        <item> fine </item>
+        <item> ten </item>
+        <item> tin </item>
+    </string-array>
+    <string-array name="FIRST_BASIC_WORDS">
+        <item>add</item>
+        <item>edit</item>
+        <item>delete</item>
+        <item>create</item>
+        <item>exit</item>
+        <item>enter</item>
+        <item>inter</item>
+        <item>cancel</item>
+        <item>back</item>
+        <item>pack</item>
+        <item>yes</item>
+        <item>no</item>
+        <item>setting</item>
+        <item>settings</item>
+        <item>open</item>
+        <item>backup</item>
+        <item>calculator</item>
+        <item>invoice</item>
+        <item>invoices</item>
+        <item>bill</item>
+        <item>bills</item>
+        <item>draft</item>
+        <item>drafts</item>
+        <item>customer</item>
+        <item>customers</item>
+        <item>supplier</item>
+        <item>suppliers</item>
+        <item>expense</item>
+        <item>expenses</item>
+        <item>product</item>
+        <item>products</item>
+        <item>bond</item>
+        <item>bonds</item>
+        <item>payment</item>
+        <item>payments</item>
+        <item>receipt</item>
+        <item>receipts</item>
+        <item>journal</item>
+        <item>journals</item>
+        <item>exchange</item>
+        <item>exchanges</item>
+        <item>rates</item>
+        <item>help</item>
+        <item>helps</item>
+        <item>feedback</item>
+        <item>about</item>
+        <item>contact</item>
+        <item>us</item>
+        <item>dashboard</item>
+        <item>control</item>
+        <item>dash</item>
+        <item>board</item>
+        <item>account</item>
+        <item>accounts</item>
+        <item>profile</item>
+        <item>profiles</item>
+        <item>point</item>
+        <item>points</item>
+        <item>and</item>
+    </string-array>
+    <string-array name="SECOND_BASIC_WORDS">
+        <item>setting</item>
+        <item>settings</item>
+        <item>backup</item>
+        <item>calculator</item>
+        <item>invoice</item>
+        <item>invoices</item>
+        <item>bill</item>
+        <item>bills</item>
+        <item>draft</item>
+        <item>drafts</item>
+        <item>customer</item>
+        <item>customers</item>
+        <item>supplier</item>
+        <item>suppliers</item>
+        <item>expense</item>
+        <item>expenses</item>
+        <item>product</item>
+        <item>products</item>
+        <item>bond</item>
+        <item>bonds</item>
+        <item>payment</item>
+        <item>payments</item>
+        <item>receipt</item>
+        <item>receipts</item>
+        <item>journal</item>
+        <item>journals</item>
+        <item>exchange</item>
+        <item>exchanges</item>
+        <item>rates</item>
+        <item>help</item>
+        <item>helps</item>
+        <item>feedback</item>
+        <item>about</item>
+        <item>contact</item>
+        <item>us</item>
+        <item>dashboard</item>
+        <item>control</item>
+        <item>dash</item>
+        <item>board</item>
+        <item>account</item>
+        <item>accounts</item>
+        <item>profile</item>
+        <item>profiles</item>
+        <item>point</item>
+        <item>points</item>
+    </string-array>
+</resources>
