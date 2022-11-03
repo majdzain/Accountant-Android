@@ -1,4 +1,5 @@
-# ![icon](app\src\main\res\mipmap-xxxhdpi\ic_launcher_2.png) Accountant
+![icon](screenshots/ic_launcher_2.png)
+# Accountant
 An android application for accounting services which allow you to create invoice, purchase, and draft bills with easy technics and voice field filling service.
 
 #### Compatible with **API Level 21** and higher
